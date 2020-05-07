@@ -24,7 +24,8 @@ htucker_1.2 and tensor_toolbox_2.6 are open source Matlab tensor libraries. Befo
 Adaptive_HGFDR.m, adaptive_rank2.m, error_rank2.m, and paring.m are the main codes of the Adaptive_HGFDR algorithm. This code can be used to achieve compression of climate model data.
 
 "Data" file contains data for experiments used in the paper, including T temperature data, etc.
-The 2бу2 20th Century Reanalysis Monthly Mean Composites Grid (http://www.cdc.noaa.gov/Composites/) were selected as the experimental data. The data set includes Air Temperature data (T) stored as a 1024*512*26(latitude longitude height) tensor and 22 other attributes stored as a  1024*512*221(latitude longitude time) tensor from 1980-01 through 1998-05. 
+The data set includes Air Temperature data (T) stored as a 1024*512*26(latitude longitude height) tensor and 22 other attributes stored as a  1024*512*221(latitude longitude time) tensor from 1980-01 through 1998-05. the experimental data are dynamics simulation files obtained from Open Science Data Cloud. The data files are in the common NetCDF (network Common Data Form) format. Each file is broken down into year and month, containing all the variables for one month. The simulations were performed at approximately 1/3-degree spatial resolution, or a mesh size of 1024x512 for 2D (https://www.opensciencedatacloud.org/). The experimental data was downloaded in 2016 and may not be downloaded in OSDC now.
+
 
 If you want to test the data, please run the test.m file. The test data is T in "data". The input and output of the function are described in the test.m file.
     
